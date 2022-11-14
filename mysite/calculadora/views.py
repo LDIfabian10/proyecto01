@@ -1,7 +1,6 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+
+from django.shortcuts import render 
 
 def index(request):
-	return HttpResponse('Este es mi primer mensaje')
+	return render(request, 'index.html')
 
-# Create your views here.
